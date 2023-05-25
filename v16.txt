@@ -1,0 +1,16 @@
+npm install @discordjs/builders @discordjs/rest discord-api-types && npm init -y && npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH
+
+
+    if((newState.id === '645629511278264340' || newState.id === '362563961238847489' ) && newState.channel !== null){
+      newState.disconnect(); return;
+    }
+
+
+    if(message.author.id === '645629511278264340' || message.author.id === '566860296707244032' || message.author.id === '362563961238847489'){
+      message.delete(); return;
+    }
+
+    
+    if(message.author.id === '645629511278264340' || message.author.id === '566860296707244032'){
+      message.delete(); return;
+    }
